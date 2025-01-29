@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BotConfig {
+  id         Int    @id @default(autoincrement())
+  discord_id String
+  host       String
+  name       String
+  icon       String
+  token      String
+  guildSum   BigInt @default(0)
+}

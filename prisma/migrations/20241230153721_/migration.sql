@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "BotConfig" ALTER COLUMN "guildSum" SET DATA TYPE BIGINT;

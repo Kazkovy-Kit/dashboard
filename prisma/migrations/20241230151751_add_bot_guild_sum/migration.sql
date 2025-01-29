@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "BotConfig" ADD COLUMN   "guildSum" INTEGER NOT NULL DEFAULT 0;
