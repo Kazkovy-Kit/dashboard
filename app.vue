@@ -1,7 +1,9 @@
+<script setup lang="ts">
+</script>
 <template>
-    <NuxtRouteAnnouncer />
-    <ToastToaster/>
-    <NuxtLayout>
-      <NuxtPage/>
-    </NuxtLayout>
+  <NuxtLayout>
+    <NuxtRouteAnnouncer/>
+<!--    <ToastToaster/>-->
+    <NuxtPage/>
+  </NuxtLayout>
 </template>

@@ -1,8 +1,13 @@
 <script setup lang="ts">
 definePageMeta({
   layout: 'app',
-  middleware: ["auth", "selected-bot"],
+  middleware: ["selected-bot"],
 });
+const {toast} = useToast()
+
+toast({
+  title: 'Test'
+})
 </script>
 
 <template>

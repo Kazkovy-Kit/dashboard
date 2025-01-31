@@ -1,4 +1,4 @@
-import {callBotAPI, getGuildID} from "~/server/utils/getBotConfig";
+import {getGuildID} from "~/server/utils/getBotConfig";
 
 export default defineCachedEventHandler(async (event) => {
 

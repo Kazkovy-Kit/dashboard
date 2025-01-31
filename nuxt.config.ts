@@ -1,14 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     extends: [
-        ['github:Kazkovy-Kit/ui', {install: true}],
-        ['github:Kazkovy-Kit/auth', {install: true}],
-        ['github:Kazkovy-Kit/modules', {install: true}],
+        '@kazkovy-kit/ui',
+        '@kazkovy-kit/auth',
+        '@kazkovy-kit/modules',
+        ["github:Kazkovy-Kit/temporary_voice", {install: true}],
     ],
     modules: ["@prisma/nuxt"],
-    ssr: false,
     devtools: {enabled: true},
-    compatibilityDate: "2025-01-28",
+    compatibilityDate: '2025-01-29',
+    ssr: false,
     prisma: {
         installStudio: false,
     },
